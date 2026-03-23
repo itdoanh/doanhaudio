@@ -4,17 +4,22 @@
 "The Phantom Killer" là siêu loa di động Hi-End công suất 4000W, là một kiệt tác DIY hội tụ những công nghệ tối tân nhất từ kỹ thuật âm học, tản nhiệt nước, vi mạch điện tử đến Trí tuệ nhân tạo (AI). 
 Dự án tập trung 100% vào **Loa Chính (Main Unit)** đóng vai trò là não bộ và trung tâm công suất. Hệ thống loa vệ tinh chỉ là phụ kiện mở rộng ngoại vi.
 
-## II. 4 TÍNH NĂNG AI & DSP ĐỘC QUYỀN ĐẲNG CẤP THẾ GIỚI
-Nhờ sức mạnh của lõi NPU 6 TOPS (Orange Pi 5 Plus) và chip DSP ADAU, hệ thống sở hữu 4 tính năng "World-First" trên một chiếc loa All-in-one:
+## II. 10 TÍNH NĂNG AI & DSP ĐỘC QUYỀN ĐẲNG CẤP THẾ GIỚI (10 KỲ QUAN CÔNG NGHỆ)
+Nhờ sức mạnh của lõi NPU 6 TOPS (Orange Pi 5 Plus) và chip DSP ADAU, hệ thống sở hữu 10 tính năng "World-First" trên một chiếc loa All-in-one:
 
-1. **AI Live Stem Splitter (Tách nhạc 4 Track thời gian thực):** Dùng AI học sâu bóc tách trực tiếp bài hát (bất kỳ nguồn nào) thành 4 kênh: Vocals, Bass, Drums, Other. Người dùng chỉnh Volume từng track bằng thanh trượt trên màn hình (VD: Kéo Vocal về 0 để tạo beat Karaoke lập tức từ nhạc Spotify/YouTube).
-2. **Thermal-Adaptive AI DSP (Phân tần thích ứng nhiệt độ):** AI theo dõi nhiệt độ dung dịch tản nhiệt nước và amply. Nếu hệ thống chạm ngưỡng Overheat, AI không giảm Volume mà tự động can thiệp DSP (Cắt Sub cao lên khoảng 5Hz, áp dụng Multiband Compression). Kết quả: Áp lực âm thanh giữ nguyên 100% nhưng công suất tiêu thụ giảm 25%, hệ thống tự động mát lại.
-3. **AI Psychoacoustic Bass & Tactile Subsonic (Bass ảo & Rung chấn vật lý):** Ứng dụng linh hoạt theo chế độ:
-   - *Chế độ Party:* Khi Sub bị cắt ở 40Hz để ép Max SPL, DSP tự động tạo sóng hài bậc 2/bậc 3 (Harmonics) trộn vào nhạc. Não bộ sẽ tự "tưởng tượng" ra dải 20Hz sâu thẳm mà màng loa không cần thụt thò quá mức, giúp loa kêu to nứt vách nhưng tiếng vẫn sâu.
-   - *Chế độ Hi-End / Cinema:* Tắt Bass ảo. Mở khóa toàn bộ giới hạn, dùng DSP can thiệp sâu (Linkwitz Transform) ép 2 củ Sub Dayton đánh thẳng xuống tần số thực **15Hz - 20Hz**. Với thiết kế thùng kín đối đỉnh, người nghe sẽ thực sự "cảm nhận" được sự rung lắc của sàn nhà và tức ngực về mặt vật lý.
-4. **Auto Room Correction (Cân chỉnh âm học phòng tự động):** 
-   - Tích hợp trực tiếp mạch Micro MEMS I2S (Knowles / InvenSense) thu tín hiệu phẳng 20Hz-20kHz. Mạch mic được **gắn nổi ngay trên mặt trước** của ván loa (nằm ẩn dưới lớp ê-căng từ tính), chỉ khoan một lỗ siêu nhỏ để luồn dây tín hiệu vào trong và bít kín bằng silicon nhằm bảo toàn áp suất buồng nén.
-   - Khi chọn chế độ "Trong Nhà", loa tự động phát tiếng Sweeping/Pink Noise. NPU phân tích biểu đồ RTA thời gian thực, sau đó can thiệp FIR Filter/DSP (Auto EQ & Delay) để cắt dội âm, bù dải khuyết. Lưu Profile tự động theo từng không gian.
+1. **AI Live Stem Splitter (Tách nhạc 4 Track thời gian thực):** Dùng AI bóc tách trực tiếp bài hát thành 4 kênh: Vocals, Bass, Drums, Other. Có thể tạo beat Karaoke lập tức từ mọi nguồn phát.
+2. **Thermal-Adaptive AI DSP (Phân tần thích ứng nhiệt độ):** AI theo dõi nhiệt độ tản nhiệt nước. Khi Overheat, hệ thống không giảm Volume mà tự động can thiệp DSP (cắt Sub cao lên, dùng Multiband Compression) để giảm 25% công suất tiêu thụ vô hình.
+3. **AI Psychoacoustic Bass (Bass ảo & Rung chấn 15Hz):** Ở chế độ Party, tạo sóng hài đánh lừa não bộ cảm nhận dải 20Hz. Ở chế độ Hi-End, mở khóa giới hạn dùng Linkwitz Transform ép Sub đánh thẳng xuống 15Hz tạo rung chấn vật lý.
+4. **Auto Room Correction (Cân chỉnh phòng tự động):** Mic MEMS I2S gắn nổi mặt trước (ẩn dưới ê-căng) tự động quét RTA hiện sóng, bù trừ dội âm phòng thời gian thực.
+5. **AI-SAM (Speaker Active Matching):** Giới hạn cơ học ảo (Excursion Limit). DSP tính toán biên độ màng loa, ép củ loa hoạt động 100% giới hạn vật lý để tạo áp lực bạo lực nhất mà không bao giờ rách màng hay chạm đáy.
+6. **Predictive Dynamic BMS:** Ép xung ngược âm học. AI đọc UART từ BMS, nếu pin có nguy cơ sập giữa Party, hệ thống từ từ nới lỏng công suất Bass một cách tinh tế không ai nhận ra, kéo dài tuổi thọ pin thêm hàng giờ.
+7. **Acoustic Hologram Upmixer:** Triệt tiêu xuyên âm (Crosstalk Cancellation) tạo sân khấu 3D giả lập, mở rộng âm hình ra không gian gấp 10 lần kích thước thật của loa.
+8. **Active Cabinet Resonance Suppression:** Dùng cảm biến rung (Piezo Sensor) dán vào vách gỗ & DSP ép củ Bass tạo sóng cơ học ngược pha. "Khóa chết" mọi rung chấn, biến vỏ gỗ Plywood thành tảng đá tĩnh lặng tuyệt đối.
+9. **Dynamic FIR/IIR Phase-Morphing:** Tự động "biến hình" Crossover. Dùng IIR (Độ trễ = 0) khi cắm Mic hát Karaoke/Live, và lập tức chuyển sang FIR 65,536-taps (Hoàn hảo về Pha thời gian) khi nghe nhạc Hi-End.
+10. **AI Asymmetric Pneumatic Overdrive (Dẫn động Khí nén Bất đối xứng - Đỉnh cao Buồng nén):** 
+    - *Vấn đề:* Thùng 32L ép 2 củ Sub Dayton tạo ra lò xo không khí phi tuyến tính. Khi màng loa thụt **vào trong**, khối khí bị nén tạo áp suất kháng cự khổng lồ. Khi màng loa bung **ra ngoài**, nó tạo ra áp suất thấp (lực hút chân không). Dùng dòng điện đối xứng thông thường sẽ sinh ra méo hài bậc 2 cực nặng và xé rách nhện loa do lố đà văng.
+    - *Giải pháp AI & DSP:* NPU liên tục phân tích lực đàn hồi khí nén. Thay vì đẩy điện đối xứng, amply TPA3255 tung ra dòng điện **bất đối xứng**: Ở chu kỳ *thụt vào*, amply bơm nhồi thêm 40% công suất để "đạp" dứt khoát vào khối khí áp suất cao. Ở chu kỳ *bung ra* (bị lò xo khí nén đẩy bật dội ngược), amply lập tức chuyển sang chế độ **Phanh điện từ (Electromagnetic Braking)**. Nó tính toán hãm dòng điện lại sao cho màng loa chỉ vượt qua hành trình cân bằng một khoảng vừa đủ để thắng lực hút (vacuum) mà không bị văng lố đà (overshoot).
+    - *Kết quả:* Vũ khí hóa hoàn toàn áp suất nén 32L. Hai màng loa Dayton dao động tịnh tiến sắc lẹm, cân bằng tuyệt đối kể cả ở Max Peak 4000W. Tạo ra cú nện Bass căng, tàn bạo, dứt khoát dội thẳng vào lồng ngực mà không hệ thống thùng hở nào làm được.
 
 ## III. THIẾT KẾ CƠ KHÍ & BUỒNG ÂM (MAIN UNIT)
 - **Kích thước & Chất liệu:** Dáng Capsule nằm ngang (Ngang 46cm x Cao 38cm x Sâu 52cm). Gỗ Plywood Nga (Vỏ 30mm, vách 20mm).
