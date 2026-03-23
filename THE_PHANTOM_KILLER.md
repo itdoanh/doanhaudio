@@ -1,11 +1,11 @@
-# 🎵 Dự án Đoàn Doanh Audio - The Phantom Killer 🎵
+# 🎵 Dự án Đoàn Doanh Audio 🎵
 
 ## I. TỔNG QUAN DỰ ÁN
-"The Phantom Killer" là siêu loa di động Hi-End công suất 4000W, là một kiệt tác DIY hội tụ những công nghệ tối tân nhất từ kỹ thuật âm học, tản nhiệt nước, vi mạch điện tử đến Trí tuệ nhân tạo (AI). 
+"Đoàn Doanh Audio" là siêu loa di động Hi-End công suất 4000W, là một kiệt tác DIY hội tụ những công nghệ tối tân nhất từ kỹ thuật âm học, tản nhiệt nước, vi mạch điện tử đến Trí tuệ nhân tạo (AI). 
 Dự án tập trung 100% vào **Loa Chính (Main Unit)** đóng vai trò là não bộ và trung tâm công suất. Hệ thống loa vệ tinh chỉ là phụ kiện mở rộng ngoại vi.
 
 ## II. THIẾT KẾ CƠ KHÍ & BUỒNG ÂM (MAIN UNIT)
-- **Kích thước & Chất liệu:** Dáng Capsule nằm ngang (Ngang 46cm x Cao 38cm x Sâu 52cm). Gỗ Plywood Nga (Vỏ 30mm, vách 20mm).
+- **Kích thước & Chất liệu:** Dáng Capsule nằm ngang (Ngang 46cm x Cao 38cm x Sâu 52cm). Gỗ Plywood Nga (Vỏ 30mm, vách 30mm).
 - **Cấu trúc 3 Khoang Độc Lập:**
   1. **Khoang Giữa (Boong-ke Sub - 32L):** Thiết kế thùng kín (16L/củ). Hai củ Sub nằm quay lưng vào nhau, gông chặt bằng trục Inox M20 đối đỉnh (công nghệ Force-canceling / Isobaric) triệt tiêu hoàn toàn rung chấn thân vỏ.
   2. **Khoang Trước (11.5L):** Buồng kín, chia vách độc lập cho củ Bass và cụm Mid/Treble.
