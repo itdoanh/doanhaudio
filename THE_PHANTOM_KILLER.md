@@ -21,19 +21,21 @@ Nhờ sức mạnh của lõi NPU 6 TOPS (Orange Pi 5 Plus) và chip DSP ADAU, h
     - *Giải pháp AI & DSP:* NPU liên tục phân tích lực đàn hồi khí nén. Thay vì đẩy điện đối xứng, amply TPA3255 tung ra dòng điện **bất đối xứng**: Ở chu kỳ *thụt vào*, amply bơm nhồi thêm 40% công suất để "đạp" dứt khoát vào khối khí áp suất cao. Ở chu kỳ *bung ra* (bị lò xo khí nén đẩy bật dội ngược), amply lập tức chuyển sang chế độ **Phanh điện từ (Electromagnetic Braking)**. Nó tính toán hãm dòng điện lại sao cho màng loa chỉ vượt qua hành trình cân bằng một khoảng vừa đủ để thắng lực hút (vacuum) mà không bị văng lố đà (overshoot).
     - *Kết quả:* Vũ khí hóa hoàn toàn áp suất nén 32L. Hai màng loa Dayton dao động tịnh tiến sắc lẹm, cân bằng tuyệt đối kể cả ở Max Peak 4000W. Tạo ra cú nện Bass căng, tàn bạo, dứt khoát dội thẳng vào lồng ngực mà không hệ thống thùng hở nào làm được.
 
-## III. THIẾT KẾ CƠ KHÍ & BUỒNG ÂM (MAIN UNIT)
-- **Kích thước & Chất liệu:** Dáng Capsule nằm ngang (Ngang 46cm x Cao 38cm x Sâu 52cm). Gỗ Plywood Nga (Vỏ 30mm, vách 20mm).
+## III. THIẾT KẾ CƠ KHÍ HI-END & BUỒNG ÂM (MAIN UNIT)
+- **Vật liệu vỏ Box:** Nhôm nguyên tấm hợp kim Hàng không (6061-T6), độ dày đồng nhất **15mm** cho tất cả các vách. Các vách được ráp ghép bằng mộng ngàm CNC, dán keo cấu trúc và xiết chặt bằng bu-lông lục giác chìm Inox.
+- **Xử lý Âm học mặt trong:** Phay CNC rãnh caro (Asymmetric Grid) sâu 3mm. Phủ toàn bộ bằng lớp keo giảm chấn/chống ồn (Bitumen hoặc Polyurea) dày 2-3mm giúp "tịt âm" kim loại hoàn toàn. Bắn khối nhôm CNC vuốt góc cong (Fillet blocks) tại các góc vuông để triệt tiêu sóng đứng.
+- **Kích thước Chuẩn Phong Thủy Lỗ Ban (Phủ bì):** Ngang 432 mm x Cao 366 mm x Sâu 504 mm (Đại Cát trên cả 3 thước).
 - **Cấu trúc 3 Khoang Độc Lập:**
-  1. **Khoang Giữa (Boong-ke Sub - 32L):** Thiết kế thùng kín (16L/củ). Hai củ Sub nằm quay lưng vào nhau, gông chặt bằng trục Inox M20 đối đỉnh (Force-canceling) triệt tiêu hoàn toàn rung chấn thân vỏ.
-  2. **Khoang Trước (11.5L):** Buồng kín, chia vách độc lập cho cụm Bass và cụm Mid/Treble.
-  3. **Khoang Sau (15.3L):** Chứa vi mạch, trạm nguồn và tản nhiệt nước. Lưng Mica 10mm khoe linh kiện.
+  1. **Khoang Trước - Buồng Mid/Bass (~10.8L, Sâu 80mm):** Lắp đặt cụm củ loa mặt trước theo kiến trúc Bán Nguyệt Flush-Mount. 2 loa Bass B&C 5" nằm sát 2 góc dưới. 2 loa Mid Scan-Speak 4" dịch vào tâm, nhô cao hơn và CNC phay họng nghiêng 10 độ sang 2 bên (Toe-out). 2 loa Treble BlieSMa 1.3" đặt cạnh nhau ở chóp đỉnh vòm, cũng được CNC phay họng vát nghiêng 10 độ tạo âm hình Hologram 3D siêu rộng. Khoang được bịt kín và nhồi bông tiêu âm.
+  2. **Khoang Giữa - Boong-ke Sub (~33.1L, Sâu 245mm):** Buồng nén nguyên khối không vách ngăn giữa. Hai củ Sub Dayton 10" nằm đối đỉnh ở 2 mặt bên hông (khoét lỗ giật cấp Flush-mount, bắt từ ngoài lọt lòng vào trong). Gông chặt bằng trục thép ren Inox M20 nối đít 2 củ loa (cách nhau 28mm) giúp tự triệt tiêu toàn bộ lực nén và rung chấn 4000W.
+  3. **Khoang Sau - Vi mạch & Tản nhiệt (~16.3L, Sâu 124mm):** Không gian sâu 124mm ôm trọn 2 két tản nhiệt nước Radiator 240mm dọc 2 bên hông, quạt tạt gió ra ngoài. Chứa 2 cục nguồn Mean Well, 8 khối amply TPA3255. Mặt lưng là Mica/Kính cường lực 10mm lộ toàn bộ nội thất tản nhiệt nước PC trong suốt.
 
 ## IV. HỆ THỐNG CỦ LOA HI-END (4-Way Active trên Main Box)
 - **Subwoofer:** 2 x Dayton Audio RSS265HE-22 (10") - 800W RMS/1600W Peak.
 - **Bass:** 2 x B&C 5FG44 (5") - Củ Pro-Audio từ Neo. Đánh upper-bass cực rát.
 - **Mid:** 2 x Scan-Speak Discovery 10F/4424G00 (4"). (Nhỏ nhưng tái tạo Vocal siêu mượt).
 - **Treble:** 2 x BlieSMa T34A-4 (1.3") - Màng hợp kim nhôm-magie đắt giá.
-- **Đặc điểm Âm học:** Cụm Mid/Treble được phay lắp nổi ở mặt ngoài ván, vát nghiêng 10 độ hướng tâm để tối ưu âm hình Stereo và Time-Alignment.
+- **Đặc điểm Âm học:** Cụm Mid/Treble được phay lọt lòng mặt ngoài vỏ nhôm, vát nghiêng 10 độ hướng tâm/phân tán để tối ưu âm hình Stereo 3D.
 
 ## V. NĂNG LƯỢNG & KHUẾCH ĐẠI (4000W)
 - **Trạm Nguồn:** 2 x Mean Well RSP-2000-48 (Tổng 4000W) + Dàn tụ xả dòng tức thời 150.000uF.
