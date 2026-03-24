@@ -64,5 +64,39 @@ Nhờ sức mạnh của lõi NPU 6 TOPS (Orange Pi 5 Plus) và chip DSP ADAU, h
 - **Box Micro Rời:** Để tinh gọn Main Unit, hệ thống thu phát Micro không dây được đẩy ra Box riêng, cắm qua cổng XLR/6.35mm.
 - **Xuất Loa Vệ Tinh:** Truyền tín hiệu Balanced Analog và Nguồn qua Jack hàng không (Aviation Plug) hoặc Neutrik Speakon cực kỳ chắc chắn, chống nhiễu tuyệt đối.
 
+## IX. DỰ TOÁN CHI PHÍ & VẬT TƯ (BOM - BILL OF MATERIALS)
+*Đây là bài toán chi phí được tối ưu hóa theo chiến lược "Smart Procurement" (Gom đơn Đại lý B2B - Vận chuyển Đường biển) và khoán trọn gói gia công CNC.*
+
+### 1. HỆ THỐNG CỦ LOA (Speaker Drivers)
+**Chiến lược Order:** Gom toàn bộ 8 củ loa tại một đại lý âm thanh quốc tế (VD: SoundImports Châu Âu - nơi phân phối đủ cả 4 hãng trên). Sử dụng tài khoản B2B để hưởng chiết khấu. Yêu cầu đóng chung 1 kiện (Consolidated) và vận chuyển **Đường Thủy (Sea Freight)** về Việt Nam để tối ưu triệt để cước phí cho 40kg nam châm Dayton.
+*   **2 x Treble BlieSMa T34A-4:** ~20.000.000 VNĐ.
+*   **2 x Sub Dayton Audio RSS265HE-22 10":** ~16.000.000 VNĐ (Đã bao gồm cước biển).
+*   **2 x Bass B&C 5FG44 5":** ~5.500.000 VNĐ.
+*   **2 x Mid Scan-Speak Discovery 10F/4424G00:** ~5.000.000 VNĐ.
+**=> Tổng chi phí Củ loa: ~ 46.500.000 VNĐ**
+
+### 2. CHI PHÍ GIA CÔNG BOX NHÔM CNC (Trọn gói tại 1 xưởng)
+**Chiến lược Gia công:** Giao bản vẽ CAD/CAM cho một xưởng cơ khí chính xác duy nhất để làm trọn gói (Turnkey) từ A-Z. Xưởng sẽ tự lo phôi, chạy máy và gửi đi nhuộm Anode.
+*   **Gói Gia công Nhôm nguyên khối (Bao gồm Phôi 6061-T6 + Phay CNC 2D vách + Phay CNC 3D họng kèn Compound Tilt + Nhuộm Anode):** Ước tính khoảng ~13.000.000 - 15.000.000 VNĐ.
+*   **Vật tư phụ gia mua ngoài:** Kính cường lực/Mica 10mm mặt lưng, Keo Epoxy kết cấu, Keo Bitumen dán chống ồn, ốc lục giác Inox, trục thép ren M20. ~2.500.000 VNĐ.
+**=> Tổng chi phí Vỏ Box Nhôm hoàn thiện: ~ 17.500.000 VNĐ**
+
+### 3. HỆ THỐNG MẠCH ĐIỆN & NĂNG LƯỢNG (Electronics)
+*   **Trạm nguồn:** 2 x Mean Well RSP-2000-48 (Hàng lướt/tháo máy viễn thông). ~5.000.000 VNĐ.
+*   **Pin & BMS:** Cell pin dòng xả cao (VD: Samsung 40T) + Mạch BMS JK 100A. ~6.000.000 VNĐ.
+*   **Amply TPA3255 (8 Bo mạch):** Các bo mạch trần cao cấp (Mono/Stereo) + Mod thay tụ. ~6.500.000 VNĐ.
+*   **Brain & DSP:** Orange Pi 5 Plus + Board DSP ADAU + Mạch DAC/Mixer + Màn hình cảm ứng. ~7.500.000 VNĐ.
+*   **Phụ kiện điện tử:** Dây loa mạ bạc, module cách ly nhiễu nguồn DC-DC, jack Neutrik/Aviation. ~2.500.000 VNĐ.
+**=> Tổng chi phí Điện tử: ~ 27.500.000 VNĐ**
+
+### 4. HỆ THỐNG TẢN NHIỆT NƯỚC (Water-Cooling)
+*   **Bơm & Tank:** 2 x Bơm DDC + Distro-plate tự custom phay CNC mica. ~3.500.000 VNĐ.
+*   **Két & Quạt:** 2 x Radiator Đồng 240mm + 8 Quạt ARGB áp suất tĩnh cao. ~3.000.000 VNĐ.
+*   **Phụ kiện nước:** 8 x Block nước tản nhiệt cho Amply + Ống cứng (Hard-tube) & Fitting. ~3.000.000 VNĐ.
+**=> Tổng chi phí Tản nhiệt: ~ 9.500.000 VNĐ**
+
+### 💰 TỔNG DỰ TOÁN CHI PHÍ (ESTIMATED TOTAL BOM)
+**=> Khoảng 101.000.000 VNĐ (~ 4.000 USD)**
+
 ---
 *Bản thiết kế hệ thống được nghiên cứu, tinh chỉnh và phát triển bởi itdoanh.*
