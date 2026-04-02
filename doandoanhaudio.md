@@ -161,40 +161,67 @@ Thay thế hoàn toàn IC Op-Amp tích hợp bằng Kiến trúc 2 tầng Op-Amp
 4.  **Solid Copper Busbar (Thanh cái dẫn dòng):** Trên mạch Subwoofer SiC và Boost SMPS GaN, tuyệt đối không dùng trace đồng in sẵn để gánh dòng 50A. Các đường ±75V và đường xuất âm IRS2092S phải được mở Solder Mask, hàn đính trực tiếp các thanh **Đồng nguyên khối (Solid Copper Busbar) dập máy** lên mặt PCB.
 
 ## XI. DỰ TOÁN CHI PHÍ & VẬT TƯ (BOM - BILL OF MATERIALS)
-*Đây là bài toán chi phí được tối ưu hóa theo chiến lược "Smart Procurement" (Gom đơn Đại lý B2B - Vận chuyển Đường biển) và khoán trọn gói gia công CNC.*
+*Lưu ý: Dự toán được bóc tách theo từng Bo mạch (Module) để phục vụ lộ trình R&D nhiều năm. Mức giá quy đổi tương đối dựa trên báo giá của Mouser, Digi-Key, PCBWay và các đại lý Hi-End Audio toàn cầu.*
 
-### 1. HỆ THỐNG CỦ LOA (Speaker Drivers)
-**Chiến lược Order:** Gom toàn bộ 8 củ loa tại một đại lý âm thanh quốc tế (VD: SoundImports Châu Âu). Sử dụng tài khoản B2B để hưởng chiết khấu. Vận chuyển **Đường Thủy (Sea Freight)** về Việt Nam.
-*   **2 x Treble BlieSMa T34A-4:** ~20.000.000 VNĐ.
-*   **2 x Sub Dayton Audio RSS265HE-22 10":** ~16.000.000 VNĐ.
-*   **2 x Bass B&C 5FG44 5":** ~5.500.000 VNĐ.
-*   **2 x Mid Scan-Speak Discovery 10F/4424G00:** ~5.000.000 VNĐ.
-**=> Tổng chi phí Củ loa: ~ 46.500.000 VNĐ**
+### 1. HỆ THỐNG CỦ LOA (TRANSDUCERS) - *Trái tim âm học*
+| STT | Hạng mục Vật tư | Số lượng | Đơn giá (VNĐ) | Thành tiền (VNĐ) | Ghi chú |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| 1.1 | Treble: BlieSMa T34A-4 (Nhôm-Magie) | 2 | 12.500.000 | 25.000.000 | Nhập từ HiFi-Sound / Madisound |
+| 1.2 | Mid: Scan-Speak 10F/4424G00 | 2 | 3.500.000 | 7.000.000 | Đỉnh cao Mid-range Đan Mạch |
+| 1.3 | Bass: B&C 5FG44 (Pro-Audio Từ Neo) | 2 | 2.500.000 | 5.000.000 | Nhập từ Parts Express |
+| 1.4 | Sub: Dayton Audio RSS265HE-22 (10") | 2 | 6.500.000 | 13.000.000 | DVC 800W RMS/củ |
+| **I** | **TỔNG HỆ THỐNG CỦ LOA** | | | **50.000.000** | |
 
-### 2. CHI PHÍ GIA CÔNG BOX NHÔM CNC & CƠ KHÍ
-*   **Gói Gia công Nhôm nguyên khối 6061-T6 (Bao gồm phay quai xách đỉnh, họng kèn nghiêng, ngàm gắn bánh xe hông):** Ước tính khoảng ~15.000.000 - 18.000.000 VNĐ.
-*   **Vật tư phụ gia (Kính cường lực 10mm, Keo Epoxy, Keo Bitumen chống ồn, trục thép ren M20):** ~2.500.000 VNĐ.
-**=> Tổng chi phí Vỏ Box Nhôm hoàn thiện: ~ 20.500.000 VNĐ**
+### 2. CHI PHÍ CHẾ TẠO CÁC BO MẠCH (PCBs & PCBA COMPONENTS) - *Linh hồn đẳng cấp*
+*Phần này đã bao gồm chi phí in mạch PCB 6-Lớp Rogers RO4350B tại PCBWay và toàn bộ linh kiện cắm/dán trên mạch đó.*
 
-### 3. HỆ THỐNG MẠCH ĐIỆN & NĂNG LƯỢNG
-*   **Nguồn, Pin & BMS (Mean Well, Samsung 40T, JK BMS):** ~11.000.000 VNĐ.
-*   **Amply TPA3255 (8 Bo mạch) & Phụ kiện:** ~9.000.000 VNĐ.
-**=> Tổng chi phí Năng lượng & Amply: ~ 20.000.000 VNĐ**
+| STT | Tên Bo Mạch (Board / Module) | Số lượng | Đơn giá (VNĐ) | Thành tiền (VNĐ) | Phân tích linh kiện chính trên Bo mạch |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| 2.1 | **Bo mạch Treble (Module 1)**<br>*Ultra-Linear Aerospace BTL* | 2 Bo (L/R) | 8.500.000 | 17.000.000 | - PCB 6-Lớp Rogers<br>- 1x TPA3255, 8x Diode SiC<br>- 2x Sparkos SS3602 (Discrete Op-Amp)<br>- 10x Điện trở Vishay Z-Foil (0.005%)<br>- Cuộn cảm Air-Core + Tụ WIMA FKP2 |
+| 2.2 | **Bo mạch Mid (Module 2)**<br>*Discrete Hybrid Class-A BTL* | 2 Bo (L/R) | 14.500.000 | 29.000.000 | - PCB 6-Lớp Rogers<br>- 1x TPA3255, 8x Diode SiC<br>- 2x Sparkos SS3602 (Discrete Op-Amp)<br>- **Cuộn cảm lá đồng Mundorf CFC**<br>- **Tụ Bạc/Đồng ngâm dầu (Mundorf/Duelund)**<br>- Điện trở Vishay Z-Foil |
+| 2.3 | **Bo mạch Mid-Bass (Module 3)**<br>*Interleaved PBTL* | 2 Bo (L/R) | 7.500.000 | 15.000.000 | - PCB 6-Lớp Rogers<br>- **2x TPA3255 (Chế độ PBTL lệch pha)**<br>- Cuộn cảm kép lõi Nanocrystalline<br>- Tụ nguồn Bulk Rubycon ZLH<br>- Discrete Op-Amp Buffer |
+| 2.4 | **Bo mạch Subwoofer (Module 4)**<br>*Composite SiC BTL* | 2 Bo (C1/C2)| 6.000.000 | 12.000.000 | - PCB 4-Lớp (Copper Pour & Busbar)<br>- 1x IRS2092S + **Sò SiC MOSFETs**<br>- Cảm biến dòng Hall Allegro ACS37002<br>- Mạch phanh Chopper + Trở sứ tản nhiệt |
+| 2.5 | **Bo mạch Nâng Áp (Boost SMPS)**<br>*1MHz GaN Multiphase* | 1 Bo tổng | 12.000.000 | 12.000.000 | - PCB 4-Lớp Đồng dày (2oz - 4oz)<br>- **Transistor GaN (Gallium Nitride)**<br>- Biến áp phẳng (Planar Transformer)<br>- Dàn tụ lọc Nichicon dòng xả cao |
+| 2.6 | **Bo mạch Nguồn Cách ly Tuyến tính**<br>*Active Ripple Eater & LDOs* | 1 Bo tổng | 6.500.000 | 6.500.000 | - MOSFET công suất chịu tải tĩnh<br>- Mảng LDO LT3045/LT3094 (0.8 µVrms)<br>- Biến áp xuyến bọc nhiễu cho GVDD |
+| **II** | **TỔNG CHI PHÍ CHẾ TẠO CÁC BO MẠCH** | | | **91.500.000** | *(Chi phí có thể tối ưu nếu gộp chung một số module trên cùng mặt PCB)* |
 
-### 4. BỘ NÃO, DSP & TỰ HÀNH (CYBERTRUCK MODULE)
-*   **NVIDIA Jetson Orin Nano + Intel RealSense D435:** ~12.000.000 VNĐ.
-*   **2 Motor Hub 8-inch trục đơn + Mạch ODrive + 4 Bánh Caster lõi thép:** ~6.000.000 VNĐ.
-*   **Mạch DSP ADAU + DAC/Mixer + Màn hình cảm ứng 14 inch:** ~7.500.000 VNĐ.
-**=> Tổng chi phí Não bộ AI & Gầm xe: ~ 25.500.000 VNĐ**
+### 3. BỘ NÃO AI, DSP & ROBOTICS (AMR) - *Trí tuệ nhân tạo*
+| STT | Hạng mục Vật tư | Số lượng | Đơn giá (VNĐ) | Thành tiền (VNĐ) | Ghi chú |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| 3.1 | **Mạch Bộ não Trung tâm AI** | 1 Bo | 13.500.000 | 13.500.000 | NVIDIA Jetson Orin Nano (8GB) |
+| 3.2 | **Mạch Xử lý Âm thanh số (DSP Board)**| 1 Bo | 6.500.000 | 6.500.000 | ADAU1467 + XMOS XU208 + DAC ESS |
+| 3.3 | Camera 3D Intel RealSense D435 + Lidar | Bộ | 12.000.000 | 12.000.000 | Đôi mắt AI Follow-Me & Tránh vật cản |
+| 3.4 | **Mạch Điều khiển Động cơ (Motor Driver)**| 2 Bo | 3.500.000 | 7.000.000 | Mạch ODrive/VESC CAN Bus lái Hub Motor |
+| 3.5 | Hub Motor BLDC 8" (Động cơ bánh xe) | 2 Cụm| 1.500.000 | 3.000.000 | Hệ dẫn động gầm Tank-Turn |
+| 3.6 | Màn hình cảm ứng 14" + Kính cường lực | 1 | 3.000.000 | 3.000.000 | Giao diện điều khiển (UI) gập nóc |
+| **III**| **TỔNG HỆ THỐNG AI, DSP & ROBOTICS** | | | **45.000.000** | |
 
-### 5. HỆ THỐNG TẢN NHIỆT NƯỚC (Water-Cooling)
-*   **Bơm & Tank (2 x DDC, Distro-plate CNC):** ~3.500.000 VNĐ.
-*   **Két & Quạt (2 Radiator Đồng 240mm, 8 Quạt ARGB):** ~3.000.000 VNĐ.
-*   **8 x Block nước TPA3255 & Fitting:** ~3.000.000 VNĐ.
-**=> Tổng chi phí Tản nhiệt: ~ 9.500.000 VNĐ**
+### 4. NĂNG LƯỢNG, BẢO VỆ & KẾT NỐI - *Sức mạnh 4000W*
+| STT | Hạng mục Vật tư | Số lượng | Đơn giá (VNĐ) | Thành tiền (VNĐ) | Ghi chú |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| 4.1 | Nguồn Mean Well RSP-2000-48 (2000W) | 2 | 8.500.000 | 17.000.000 | Cấp nguồn khi cắm điện lưới |
+| 4.2 | Khối Pin Samsung 40T (48 Cell) + Kẽm hàn| Bộ | 6.000.000 | 6.000.000 | Khối 12S4P xả dòng siêu cao (Tự pack) |
+| 4.3 | **Mạch Quản lý Pin (BMS Board)** | 1 Bo | 2.500.000 | 2.500.000 | Mạch JK BMS 100A + Active Balancer |
+| 4.4 | Dây dẫn, Jack Neutrik, Aviation Plug | Bộ | 8.500.000 | 8.500.000 | Dây đồng mạ bạc Teflon, đầu cắm mạ vàng|
+| **IV** | **TỔNG NĂNG LƯỢNG & KẾT NỐI** | | | **34.000.000** | |
 
-### 💰 TỔNG DỰ TOÁN CHI PHÍ (ESTIMATED TOTAL BOM)
-**=> Khoảng 122.000.000 VNĐ (~ 4.880 USD)**
+### 5. KHUNG VỎ CNC & HỆ THỐNG TẢN NHIỆT NƯỚC - *Cơ khí chính xác*
+| STT | Hạng mục Vật tư | Số lượng | Đơn giá (VNĐ) | Thành tiền (VNĐ) | Ghi chú |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| 5.1 | Nhôm 6061-T6 + Phay CNC nguyên khối | Bộ | 35.000.000 | 35.000.000 | Họng kèn Compound 3D, vách 15mm |
+| 5.2 | Bơm Dual DDC + Block nước làm mát | Bộ | 12.000.000 | 12.000.000 | Custom Distro-plate, Block đồng tản IC |
+| 5.3 | Radiator Đồng (240/280mm) + Quạt ARGB | 2+8 | 6.000.000 | 6.000.000 | Cấu hình Push-Pull áp suất tĩnh |
+| 5.4 | Phụ liệu (Polyurea, Ống Hard-tube, Ốc Inox) | Bộ | 5.000.000 | 5.000.000 | Xử lý âm học, chống rung, bịt kín |
+| **V** | **TỔNG CƠ KHÍ & TẢN NHIỆT NƯỚC** | | | **58.000.000** | |
 
 ---
-*Bản thiết kế hệ thống được nghiên cứu, tinh chỉnh và phát triển bởi itdoanh.*
+
+### TỔNG CỘNG CHI PHÍ DỰ KIẾN (GRAND TOTAL)
+*   **I. Hệ thống củ loa:** 50.000.000 VNĐ
+*   **II. Chi phí chế tạo các Bo mạch (PCBA):** 91.500.000 VNĐ
+*   **III. Hệ thống AI, DSP & Robotics:** 45.000.000 VNĐ
+*   **IV. Năng lượng & Kết nối:** 34.000.000 VNĐ
+*   **V. Cơ khí & Tản nhiệt nước:** 58.000.000 VNĐ
+*   *Dự phòng phát sinh (R&D, Test cháy mạch, Thuế quan - 10%):* ~28.000.000 VNĐ
+
+=> **TỔNG LƯỢNG VỐN ĐẦU TƯ DỰ KIẾN (CAPEX): ~306.500.000 VNĐ (Khoảng 12.300 USD)**
